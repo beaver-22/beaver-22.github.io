@@ -1,47 +1,34 @@
 # beaver-22.github.io
 
-Academic homepage for Jaeyong Ko, built with Jekyll and deployed through GitHub Pages.
+Academic homepage for Jaeyong Ko.
 
-Live site:
+This site was created from the Jekyll template:
+
+```txt
+https://github.com/luost26/academic-homepage.git
+```
+
+The original template is MIT-licensed. Local content, images, CV, and site data
+have been customized for this homepage.
+
+## Site
 
 ```txt
 https://beaver-22.github.io/
 ```
 
-## Overview
-
-This repository contains a personal academic website with:
-
-- Profile and contact links
-- Education
-- Publications
-- Research experience
-- Selected projects
-- Other experience
-- News
-- CV PDF
-
-The site is based on the MIT-licensed
-[academic-homepage](https://github.com/luost26/academic-homepage) template.
-
-## Editing Content
-
-Most content lives in data or collection files:
+## Main Content Files
 
 ```txt
-_data/profile.yml                 Profile, education, experience, projects
-_data/authors.yml                 Publication author links and highlighting
-_news/                            Homepage news items
-_publications/                    Publication entries
-cv/CV_jaeyongko.pdf               Downloadable CV
-assets/images/badges/             Institution and organization logos
-assets/images/covers/             Publication cover figures
-assets/images/photos/portrait.jpg Profile photo
+_data/profile.yml       Profile, education, experience, projects
+_data/authors.yml       Publication author metadata
+_news/                  News items
+_publications/          Publication entries
+assets/images/          Profile photo, logos, and publication figures
+cv/CV_jaeyongko.pdf     Downloadable CV
 ```
 
 ## Local Preview
-
-Install Ruby, Bundler, and Jekyll dependencies:
 
 ```bash
 bundle install
@@ -52,22 +39,4 @@ Then open:
 
 ```txt
 http://127.0.0.1:4000/
-```
-
-On Ubuntu/Debian, native gems may require:
-
-```bash
-sudo apt install ruby-dev build-essential
-```
-
-## Deployment
-
-This repository is intended to be deployed as a GitHub Pages user site from the `main` branch root.
-
-GitHub Pages settings:
-
-```txt
-Source: Deploy from a branch
-Branch: main
-Folder: / (root)
 ```
