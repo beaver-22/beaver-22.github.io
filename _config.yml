@@ -20,7 +20,7 @@ description: >-
   at Seoul National University working on large language models, mathematical
   reasoning, latent reasoning, and financial-domain evaluation.
 baseurl: "" # keep empty for a user/organization GitHub Pages site
-url: ""
+url: "https://beaver-22.github.io"
 
 # Build settings
 markdown: kramdown
