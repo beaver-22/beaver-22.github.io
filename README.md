@@ -1,60 +1,73 @@
-# jaeyong_ko_homepage
+# beaver-22.github.io
 
-Jekyll-based academic personal homepage for Jaeyong Ko.
+Academic homepage for Jaeyong Ko, built with Jekyll and deployed through GitHub Pages.
 
-This site is based on the MIT-licensed
-[luost26/academic-homepage](https://github.com/luost26/academic-homepage)
-template, matching the structure of the reference site at
-<https://jinulee-v.github.io/>.
-
-## Structure
+Live site:
 
 ```txt
-_data/profile.yml       Profile, education, experience, projects, skills
-_data/navigation.yml    Top navigation
-_news/                  News collection
-_publications/          Publication collection
-cv/                     CV source and PDF
-assets/                 Template assets
-index.html              Homepage layout
-publications.html       Publications page
+https://beaver-22.github.io/
+```
+
+## Overview
+
+This repository contains a personal academic website with:
+
+- Profile and contact links
+- Education
+- Publications
+- Research experience
+- Selected projects
+- Other experience
+- News
+- CV PDF
+
+The site is based on the MIT-licensed
+[academic-homepage](https://github.com/luost26/academic-homepage) template.
+
+## Editing Content
+
+Most content lives in data or collection files:
+
+```txt
+_data/profile.yml                 Profile, education, experience, projects
+_data/authors.yml                 Publication author links and highlighting
+_news/                            Homepage news items
+_publications/                    Publication entries
+cv/CV_jaeyongko.pdf               Downloadable CV
+assets/images/badges/             Institution and organization logos
+assets/images/covers/             Publication cover figures
+assets/images/photos/portrait.jpg Profile photo
 ```
 
 ## Local Preview
 
-Install Ruby/Bundler prerequisites, then run:
+Install Ruby, Bundler, and Jekyll dependencies:
 
 ```bash
 bundle install
 bundle exec jekyll serve
 ```
 
-On Ubuntu/Debian, native gems may require Ruby headers:
-
-```bash
-sudo apt install ruby-dev build-essential
-```
-
-The local server will print a preview URL, usually:
+Then open:
 
 ```txt
 http://127.0.0.1:4000/
 ```
 
-## Content Notes
+On Ubuntu/Debian, native gems may require:
 
-- The CV PDF linked from the site is `cv/CV_jaeyongko.pdf`.
-- The LaTeX CV source is `cv/main.tex`.
-- Main profile content should be edited in `_data/profile.yml`.
-- Publications should be added under `_publications/<year>/`.
-- News items should be added under `_news/`.
+```bash
+sudo apt install ruby-dev build-essential
+```
 
 ## Deployment
 
-For a clean GitHub Pages user site, use a repository named:
+This repository is intended to be deployed as a GitHub Pages user site from the `main` branch root.
+
+GitHub Pages settings:
 
 ```txt
-<github-username>.github.io
+Source: Deploy from a branch
+Branch: main
+Folder: / (root)
 ```
-
-For a project site, set `baseurl` in `_config.yml` to the repository path.
