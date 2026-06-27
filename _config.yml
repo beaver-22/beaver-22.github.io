@@ -21,6 +21,7 @@ description: >-
   reasoning, latent reasoning, and financial-domain evaluation.
 baseurl: "" # keep empty for a user/organization GitHub Pages site
 url: "https://beaver-22.github.io"
+google_analytics: "G-LXD4D3TQJL"
 
 # Build settings
 markdown: kramdown
