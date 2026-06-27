@@ -1,0 +1,213 @@
+% --- LaTeX CV Template - S. Venkatraman ---
+
+% Set document class and font size
+\documentclass[letterpaper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace}
+
+% --- Page layout settings ---
+
+% Set page margins
+\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.1}
+
+% --- Page formatting ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\definecolor{accent}{HTML}{264D7E} % deep indigo blue for sections and links
+\hypersetup{colorlinks=true, linkcolor=accent, urlcolor=accent}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage[tracking=true]{microtype}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% Section label macro: unified deep navy, slightly larger
+\newcommand{\sectionlabel}[1]{\nohyphens{\large\color{accent}{\renewcommand{\arraystretch}{0.9}\begin{tabular}[t]{@{}l@{}}#1\end{tabular}}}}
+
+\newenvironment{cvitems}
+{
+\begin{itemize}[leftmargin=1.5em,
+                itemsep=0pt,
+                parsep=0pt,
+                topsep=2pt,
+                partopsep=0pt]
+}
+{
+\end{itemize}
+}
+
+% --- Document starts here ---
+
+\begin{document}
+
+% Name and date of last update to this document
+\noindent{\Huge{Jaeyong Ko}
+\hfill{\it\footnotesize Updated \today}}
+
+% --- Contact information and other items ---
+
+\vspace{0.5cm} 
+\begin{center}
+\begin{tabular}{lll}
+% Line 1: Email, GitHub, office location
+\textbf{Email}: \href{mailto:jyko22@snu.ac.kr}{jyko22@snu.ac.kr}      &
+\hspace{0.50in} \textbf{GitHub}: \href{https://github.com/beaver-22}{beaver-22}    &
+\hspace{0.50in} \textbf{LinkedIn}: \href{https://www.linkedin.com/in/jaeyong-ko-360870243/}{jaeyong-ko-360870243} \\
+
+\end{tabular}
+\end{center}
+
+% --- Start the two-column table storing the main content ---
+
+% Set spacing between columns
+\setlength{\tabcolsep}{8pt}
+
+% Set the width of each column
+\begin{longtable}{p{1.3in}p{4.8in}}
+
+% --- Section: Research interests ---
+
+\smash{\sectionlabel{Research interests}}
+& Large Language Models (LLMs): Mathematical \& Latent Reasoning, and Evaluation in the Financial Domain \\
+& \\
+
+% --- Section: Education ---
+
+\smash{\sectionlabel{Education}}
+& \textbf{Seoul National University} \hfill Seoul, South Korea \newline
+MS in Industrial Engineering \hfill Sep 2025 -- Present \newline
+BS in Industrial Engineering \hfill Mar 2019 -- Aug 2025 \newline
+\textit{Overall GPA: 3.82/4.3 (3.72/4.0), Major GPA: 3.82/4.3 (3.72/4.0)} \\
+& \\
+
+% --- Section: Awards, scholarships, etc. ---
+
+%\sectionlabel{Honors and scholarships}
+%& Startup Competition Excellence Award \hfill 2019\\
+%& IE Idea Competition Excellence Award (KIIE) \hfill Aug 2019 \\
+%& \\
+
+% --- Section: Publications ---
+\smash{\sectionlabel{Publications}}
+& \textbf{Cliff Tokens: Identifying Single-Token Failure Triggers in LLM Mathematical Reasoning} \newline
+\underline{Jaeyong Ko}, Pilsung Kang, Yukyung Lee$^{\dagger}$. \newline
+\textit{arXiv preprint arXiv:2606.25524}, 2026. \href{https://arxiv.org/abs/2606.25524}{[arXiv]}
+%\textit{Under review} \\
+& \\
+
+% --- Section: Research experience ---
+
+\smash{\sectionlabel{Research\\experience}}
+& \textbf{Data Science \& Business Analytics Lab, SNU} \hfill Sep 2025 -- Present \newline
+Master's Student (Advisor: \href{https://dsba.snu.ac.kr/professor/}{Prof. Pilsung Kang})  \\
+& \\
+
+& \textbf{École Polytechnique de Montréal} \hfill Apr 2024 -- Aug 2024 \newline
+Research Intern (Advisor: \href{https://www.polymtl.ca/expertises/en/jomaa-walid}{Prof. Walid Jomaa})
+\begin{cvitems}
+\item Human-centric Smart Manufacturing Workcells for Industry 5.0 applications.
+\end{cvitems}
+\\
+& \\
+
+& \textbf{Financial Engineering Lab, KAIST} \hfill Dec 2023 -- Feb 2024 \newline
+Research Intern (Advisor: \href{https://felab.kaist.ac.kr/team.html}{Prof. Woo Chang Kim}) 
+\begin{cvitems} 
+\item Reinforcement learning applications for goal-based wealth management. 
+\end{cvitems}
+\\
+& \\
+
+% --- Section: Projects ---
+
+\smash{\sectionlabel{Projects}}
+
+& \textbf{Duo 2.0: Evaluating LLM Reliability in Long Financial Conversations}
+\,\textbar\, \textit{Granted by Kakaobank}
+\hfill Dec 2025 -- Present
+\begin{cvitems}
+\item Quantified LLM capabilities in resolving ambiguous user queries using LLM-as-a-Judge methodologies.
+\item Designed a financial life-cycle event conversation benchmark for evaluating domain-specific conversational reliability.
+\end{cvitems}
+\\
+& \\
+
+& \textbf{Development of Advanced Integrated Monitoring Technologies for Laser Welding}
+\,\textbar\, \textit{Granted by LG Electronics}
+\hfill Jul 2025 -- Dec 2025
+\begin{cvitems}
+\item Designed and conducted experiments for a laser welding anomaly detection model utilizing time-series and image multi-modal data.
+\end{cvitems}
+\\
+& \\
+
+% --- Section: Industry experience ---
+
+\smash{\sectionlabel{Industry\\experience}}
+
+& \textbf{EXGRAM} \hfill Jul 2022 -- Oct 2022 \newline
+Product Manager Intern
+\begin{cvitems}
+\item Planned app configurations and push notifications for the app, Veloo.
+\end{cvitems}
+\\
+& \\
+
+& \textbf{SNU Startup Consulting Group (\href{https://www.snuact.org/}{ACT})}
+\hfill Mar 2023 -- Dec 2023 \newline
+President \& Team member
+\begin{cvitems}
+\item Led a student consulting group and secured four startup consulting engagements with \textit{Moderntec}, \textit{Designovel}, \textit{Spring Onward}, and \textit{Sweetspot}.
+\item Developed GTM strategies for \textit{Designovel} (AI fashion-tech), \textit{Moderntec} (EV charging infrastructure), and \textit{Wavebridge} (cryptocurrency OTC platform).
+\end{cvitems}
+\\
+& \\
+
+% --- Section: Teaching experience ---
+
+\smash{\sectionlabel{Teaching\\experience}}
+
+& \textbf{Peer Tutoring, Seoul National University} \newline
+Course: Production Control (406.310) \hfill Sep 2024 -- Dec 2024 \newline
+Course: Human Factors Engineering (406.304) \hfill Sep 2023 -- Dec 2023 \\
+& \\
+
+% --- Section: Various skills (programming, software, languages, etc.) ---
+
+\smash{\sectionlabel{Skills}}
+& \textbf{Programming and Software}\newline
+Proficient in: Python, R, MySQL, Docker, Git, vLLM, \LaTeX. \\
+& \\
+
+& \textbf{Languages} \newline
+Native Korean; Professional working proficiency in English (OPIc IH). \\
+& \\
+
+% --- Section: Military Service ---
+
+\smash{\sectionlabel{Military service}}
+& \textbf{Republic of Korea Army} \hfill Jan 2021 -- Jul 2022 \newline
+Corporal
+\begin{cvitems}
+\item Completed full-term mandatory military service, demonstrating adaptability, discipline, and leadership through various operational trainings.
+\end{cvitems}
+\\
+& \\
+
+% --- Section: Other interests/hobbies ---
+
+% \smash{\sectionlabel{Other interests}} & Marathon running, dinghy sailing (ILCA 7), soccer, road cycling\\
+
+% --- End of CV! ---
+
+\end{longtable}
+\end{document}

@@ -1,0 +1,113 @@
+primary_name: "Jaeyong Ko"
+secondary_name: ""
+navbar_name: "Jaeyong Ko"
+
+positions:
+- name: M.S. Student
+- name: Industrial Engineering
+- name: Seoul National University
+- name: Data Science & Business Analytics Lab
+
+email: "jyko22@snu.ac.kr"
+cv_link: /cv/CV_jaeyongko.pdf
+github: beaver-22
+linkedin: jaeyong-ko-360870243
+portrait_url: /assets/images/photos/portrait.jpg
+portrait_caption: "Jaeyong Ko"
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    Hi! I am Jaeyong Ko, an M.S. student in Industrial Engineering at Seoul
+    National University, advised by
+    <a href="https://dsba.snu.ac.kr/professor/" target="_blank">Prof. Pilsung Kang</a>
+    in the
+    <a href="https://dsba.snu.ac.kr/" target="_blank">Data Science &amp; Business Analytics Lab</a>.
+  </p>
+  <p>
+    My research interests are in large language models, with a focus on
+    mathematical reasoning, latent reasoning, and evaluation in the financial
+    domain. I am currently interested in latent reasoning in vision-language
+    models, especially how models reason beyond text-token reasoning traces.
+  </p>
+
+education:
+- name: Seoul National University
+  logo: /assets/images/badges/snu_ui_download.png
+  position: M.S. in Industrial Engineering
+  date: Sep. 2025 - Present
+- name: Seoul National University
+  logo: /assets/images/badges/snu_ui_download.png
+  position: B.S. in Industrial Engineering
+  date: Mar. 2019 - Aug. 2025
+  dept: "Overall GPA: 3.82/4.3 (3.72/4.0); Major GPA: 3.82/4.3 (3.72/4.0)"
+
+experience:
+- name: Data Science & Business Analytics Lab, SNU
+  logo: /assets/images/badges/snu_ui_download.png
+  position: "Master's Student"
+  advisor_name: Prof. Pilsung Kang
+  advisor_url: https://dsba.snu.ac.kr/professor/
+  date: Sep. 2025 - Present
+- name: Ecole Polytechnique de Montreal
+  logo: /assets/images/badges/polymont.png
+  position: "Research Intern"
+  advisor_name: Prof. Walid Jomaa
+  advisor_url: https://www.polymtl.ca/expertises/en/jomaa-walid
+  date: Apr. 2024 - Aug. 2024
+  details:
+  - Human-centric smart manufacturing workcells for Industry 5.0 applications.
+- name: Financial Engineering Lab, KAIST
+  logo: /assets/images/badges/KAIST_logo.png
+  position: "Research Intern"
+  advisor_name: Prof. Woo Chang Kim
+  advisor_url: https://felab.kaist.ac.kr/team.html
+  date: Dec. 2023 - Feb. 2024
+  details:
+  - Reinforcement learning applications for goal-based wealth management.
+
+projects:
+- name: "Duo 2.0: Evaluating LLM Reliability in Long Financial Conversations"
+  logo: /assets/images/badges/kakaobank.png
+  position: Granted by Kakaobank
+  date: Dec. 2025 - Present
+  dept: Financial-domain conversational reliability benchmark and LLM-as-a-Judge evaluation.
+- name: Development of Advanced Integrated Monitoring Technologies for Laser Welding
+  logo: /assets/images/badges/lg.png
+  position: Granted by LG Electronics
+  date: Jul. 2025 - Dec. 2025
+  dept: Laser welding anomaly detection with time-series and image multi-modal data.
+
+industry_experience:
+- name: EXGRAM
+  logo: /assets/images/badges/exgram.png
+  position: Product Manager Intern
+  date: Jul. 2022 - Oct. 2022
+  dept: Planned app configurations and push notifications for Veloo.
+- name: SNU Startup Consulting Group (ACT)
+  logo: /assets/images/badges/act.png
+  position: President & Team Member
+  date: Mar. 2023 - Dec. 2023
+  dept: Led student consulting engagements and developed GTM strategies for startup clients.
+
+teaching:
+- name: Peer Tutoring, SNU
+  logo: /assets/images/badges/snu_ui_download.png
+  position: "Course: Production Control (406.310)"
+  date: Sep. 2024 - Dec. 2024
+- name: Peer Tutoring, SNU
+  logo: /assets/images/badges/snu_ui_download.png
+  position: "Course: Human Factors Engineering (406.304)"
+  date: Sep. 2023 - Dec. 2023
+
+military_service:
+- name: Republic of Korea Army
+  logo: /assets/images/badges/roka.png
+  position: Corporal
+  date: Jan. 2021 - Jul. 2022
+
+skills:
+- name: Programming and Software
+  detail: Python, R, MySQL, Docker, Git, vLLM, LaTeX
+- name: Languages
+  detail: Native Korean; professional working proficiency in English (OPIc IH)
