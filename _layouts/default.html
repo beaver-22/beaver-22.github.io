@@ -4,9 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    {% if page.title == site.data.profile.navbar_name %}
+    {% assign page_full_title = site.data.profile.navbar_name %}
+    {% else %}
+    {% assign page_full_title = page.title | append: " - " | append: site.data.profile.navbar_name %}
+    {% endif %}
+    <title>{{ page_full_title }}</title>
     <meta name="description" content="Academic homepage for Jaeyong Ko.">
-    <meta property="og:title" content="{{ page.title }} - {{ site.data.profile.navbar_name }}">
+    <meta property="og:title" content="{{ page_full_title }}">
     <meta property="og:description" content="Academic homepage for Jaeyong Ko.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ site.url }}{{ '/assets/images/favicon.png' | relative_url }}">
