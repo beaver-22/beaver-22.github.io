@@ -89,6 +89,10 @@ industry_experience:
   position: President & Team Member
   date: Mar. 2023 - Dec. 2023
   dept: Led student consulting engagements and developed GTM strategies for startup clients.
+- name: Republic of Korea Army
+  logo: /assets/images/badges/roka.png
+  position: Corporal
+  date: Jan. 2021 - Jul. 2022
 
 teaching:
 - name: Peer Tutoring, SNU
@@ -99,12 +103,6 @@ teaching:
   logo: /assets/images/badges/snu_ui_download.png
   position: "Course: Human Factors Engineering (406.304)"
   date: Sep. 2023 - Dec. 2023
-
-military_service:
-- name: Republic of Korea Army
-  logo: /assets/images/badges/roka.png
-  position: Corporal
-  date: Jan. 2021 - Jul. 2022
 
 skills:
 - name: Programming and Software
