@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5, h6,
     vertical-align: -20%;
 }
 
+.abstract-links a + a {
+    margin-left: 8px;
+}
+
 .no-break {
     white-space: nowrap;
 }
